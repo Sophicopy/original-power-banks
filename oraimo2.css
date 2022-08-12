@@ -31,6 +31,12 @@ import unittest
   
   }
   
+	@font-face{
+  font-family: Poppins;
+  src: url('Poppins-Regular.ttf');
+  
+  }
+  
   @font-face{
   font-family: Poppins-b;
   src: url('../Fonts/Poppins/Poppins-SemiBold.ttf');
@@ -251,6 +257,9 @@ import unittest
    	width: 300px;
    } 
    	
+	   .ad-section img{
+		   width: 300px;
+	   }
    }
    
   @media (max-width: 600px){
