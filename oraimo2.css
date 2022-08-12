@@ -1,0 +1,278 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+oraimo2.py
+
+Created by Sophia Oladapo on 8/8/22.
+Copyright (c) 2022 Copyright Holder. All rights reserved.
+"""
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+import unittest
+
+:root{
+	--font: Montserrat;
+	--green: #83D200;
+	--white: #FFFFFF;
+	}
+	
+	:root { 
+  --green: #83D200; 
+  --white: #FFFFFF;
+} 
+/*  */
+
+@font-face{
+  font-family: Poppins;
+  src: url('../Fonts/Poppins/Poppins-Regular.ttf');
+  
+  }
+  
+  @font-face{
+  font-family: Poppins-b;
+  src: url('../Fonts/Poppins/Poppins-SemiBold.ttf');
+  
+  }
+   
+   @font-face{
+  font-family: Poppins-b;
+  src: url('Poppins-SemiBold.ttf');
+  
+  }
+   
+   
+  @font-face{
+  font-family: Montserrat;
+  src: url('../Fonts/Montserrat/Montserrat-ExtraBold.ttf');
+  
+  }
+
+@font-face{
+  font-family: Montserrat;
+  src: url('Montserrat-ExtraBold.ttf');
+  
+  }
+
+ *{
+ 	padding:0;
+ 	margin: 0;
+ 	font-family: Poppins, Montserrat, Helvetica;
+ 	box-sizing: border-box;
+ 	font-size: 16px;
+ 	color: black;
+ 
+
+ 	
+ }
+   body{
+   	background: white;
+   }
+   
+   
+  .section-1{
+  	width: 100%;
+  	padding: 20px;
+  	padding-bottom: 30px;	
+  	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+  }
+  
+  .section-1 .green{
+   	color: var(--green);
+   	font-size: 30px;
+   	text-align: center;
+   	font-family: Montserrat;
+   margin-top: 15px;	
+    width: 70%;
+   }
+   
+   .section-1 p{
+   	width: 70%;
+   	font-size: 20px;
+   	margin-top: 20px;
+   	padding-bottom: 30px;
+   	white-space: pre-wrap;
+   }
+  
+  
+  p b{
+  	font-family: Poppins-b;
+  	font-size: 20px;
+  } 
+  
+  
+  .red{
+   	font-size: 22px;
+   	text-align: center;
+   	color: red;
+   	margin: 0 0 0 0;
+   	font-family: Poppins-b, 'Poppins';
+   	background: black;
+   	padding: 10px 40px;
+   	border-radius: 30px;
+   }
+   
+   .img{
+   	width: 300px;   	
+   	margin-top: 20px;
+  	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+   	}
+   
+   span.big{
+   	font-size: 20px;
+   	font-family: Montserrat;	
+   }
+   
+   a{
+   	text-decoration: none;
+   }
+
+ /*  .button{
+   	display: block;
+   	font-size: 25px;
+   	color: black;
+   	background-color: var(--green);
+   	font-family: Montserrat;
+   	padding: 20px 0;
+   	text-align: center;
+   	border-radius: 5px;
+   }
+   */
+   .button:hover{
+   	border: 2px solid white;
+   }
+   
+    .ad-section{
+  	width: 100%;
+  	padding: 5px;
+  	padding-bottom: 30px;	
+  	display: flex;
+   	flex-direction: column;
+   	align-items: center;
+  } 
+  
+  @keyframes advert{
+  	0%{
+  		opacity: 100%;
+  	}
+  	
+  	50%{
+  		opacity: 10%
+  	}
+  	
+  	100%{
+  		opacity: 100%;
+  	}
+  }
+  
+  .ad-section img{
+  	width: 350px;
+  	padding: 10px;
+  	box-shadow: 5px 3px 7px 4px #BCA9A9;
+  	animation-name: advert;
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: 120;
+   	
+  }
+  
+  .ad-section h1{
+  	font-family: Helvetica;
+  	font-weight: 700;
+  	color: var(--green);
+  	text-align: left;
+  	font-size: 20px;
+  	margin: 20px 0;
+  }
+  
+  .ad-section a:hover{
+  	background-color: var(--green);
+  }
+  
+
+
+  .ad-section .btn{
+  	color: white;
+  	font-family: Poppins-b, Helvetica;
+  	font-weight: 600;
+  	text-align: center;
+  	padding: 10px 50px;
+  	font-size: 20px;
+  	display: block;
+  	background-color: var(--green);
+  	border-radius: 50px;
+  	text-decoration: uppercase;
+  	margin: 10px 0;
+  }
+  
+  footer{
+  	text-align: center;
+  	background: gray;
+  	padding: 20px 0;
+  	width: 100%;
+  	color: white;
+  }
+
+   @media (max-width: 900px){
+   .section-1{
+  	padding: 20px;
+  	padding-bottom: 30px;
+  	
+  }
+   .section-1 .green{
+   	color: var(--green);
+   	font-size: 28px;
+   	text-align: center;
+   	font-family: Montserrat;
+   margin-top: 25px;	
+    width: 90%;
+   }
+   
+   .section-1 p{
+   	width: 80%;
+   	font-size: 18px;
+   	margin-top: 10px;
+   	margin-bottom: 20px;
+   	white-space: pre-wrap;
+   }
+  
+  
+  .button{
+   	display: block;
+   	font-size: 20px;
+   
+   }
+   
+   img{
+   	width: 300px;
+   } 
+   	
+   }
+   
+  @media (max-width: 600px){
+  	 
+   .btn{
+   	font-size: 17px;
+   }
+   
+   .section-1 .green{
+   	color: var(--green);
+   	font-size: 24px;
+   
+   }   
+  
+  .section-1 p{
+   	width: 80%;
+   	font-size: 16px;
+   
+   }
+   
+   img{
+   	width: 250px;	
+   }
+   
+   }
